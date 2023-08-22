@@ -23,7 +23,7 @@
 <% end %>
 -->
 
-<%= form_with model: @user, scope: :dylan do |form| %>
+<%= form_with model: @user do |form| %>
   <%= form.label :email, 'Email:' %>
   <%= form.email_field :email, placeholder: 'example@example.com' %><br><br>
   <%= form.label :username, 'Username:' %>
