@@ -25,9 +25,9 @@
 
 <%= form_with model: @user do |form| %>
   <%= form.label :email, 'Email:' %>
-  <%= form.email_field :email%><br><br>
+  <%= form.email_field :email, placeholder: 'example@example.com' %><br><br>
   <%= form.label :username, 'Username:' %>
-  <%= form.text_field :username %><br><br>
+  <%= form.text_field :username, value: 'jenny' %><br><br>
   <%= form.label :password, 'Password:' %>
   <%= form.password_field :password %><br><br>
   <%= form.submit 'Save new user' %>
