@@ -1,3 +1,8 @@
+
+<% @user.errors.full_messages.each do |message| %>
+  <div><%= message %></div>
+<% end %>
+
 <%= form_with model: @user do |form| %>
   <%= form.label :email, 'Email:' %>
   <%= form.email_field :email %><br><br>
